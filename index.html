@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guitar - Solopreneur</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1773cf",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111921",
+                        "foreground-light": "#111827",
+                        "foreground-dark": "#f9fafb",
+                        "subtle-light": "#6b7280",
+                        "subtle-dark": "#9ca3af",
+                        "border-light": "#e5e7eb",
+                        "border-dark": "#374151"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .social-link {
+            transition: transform 0.2s ease-in-out;
+        }
+        .social-link:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
+<header class="w-full bg-background-light dark:bg-background-dark border-b border-border-light dark:border-border-dark sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex-shrink-0">
+<a class="flex items-center space-x-2" href="#">
+<svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.311a7.5 7.5 0 01-7.5 0C4.42 19.984 2.25 18.284 2.25 16.5s2.17-3.484 4.5-3.985m10.5 4.636a7.5 7.5 0 00-7.5 0c-2.33.501-4.5 2.201-4.5 3.985s2.17 3.484 4.5 3.985m7.5-7.5h-7.5m7.5 0a7.5 7.5 0 013.75 2.065M12 12V6.75A5.25 5.25 0 006.75 12H12zm0 0h5.25A5.25 5.25 0 0012 6.75v5.25z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="text-xl font-bold text-foreground-light dark:text-foreground-dark">Guitar</span>
+</a>
+</div>
+<nav class="hidden md:flex md:items-center md:space-x-8">
+<a class="text-base font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-base font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">About</a>
+<a class="text-base font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Work</a>
+<a class="text-base font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Blog</a>
+</nav>
+<div class="flex items-center">
+<a class="hidden sm:inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-lg text-white bg-primary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-background-dark" href="mailto:hello@alex.design">
+            Contact Me
+          </a>
+<button class="md:hidden ml-4 p-2 rounded-md text-subtle-light dark:text-subtle-dark hover:text-foreground-light dark:hover:text-foreground-dark hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+<span class="sr-only">Open main menu</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</header>
+<div class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+<main class="w-full max-w-4xl mx-auto">
+<section class="flex flex-col md:flex-row items-center gap-8 md:gap-12 py-16 md:py-24">
+<div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+<img alt="Portrait of Guitar" class="w-full h-full rounded-full object-cover border-4 border-white dark:border-background-dark shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDByG8beNyFV0j4QnkmTTjcCfigW8w_0UP4dpezZrcDZDDO7ExFOwRry7ZYUpVK1WRhzsGm5WJ2xcUguLRnAmW51MKfU3pB7gOfc_Hg7xFSwF_gP4dS_ZLb03Iz7iAJIp7uyqBy4bA0NurqbMg7eYuTkJC0WzLj0xbPHBl3cpyPvRbWEnx_03nD0nfSxB4x680taswNq2z4DoMoCq2nqJ4chLApwOm_gOUcfQ3qaiIaaoO4SXl_Tv_HWSfYG8kiQ2tZG4yrvVBWSo"/>
+</div>
+<div class="text-center md:text-left">
+<h1 class="text-4xl sm:text-5xl font-black text-foreground-light dark:text-foreground-dark tracking-tight">Hi, I'm Guitar</h1>
+<p class="mt-2 text-lg text-primary font-semibold">Solopreneur</p>
+<p class="mt-4 max-w-xl text-subtle-light dark:text-subtle-dark">
+                        สวัสดีชาวแก๊ง นี่คือเว็บ demo ของเราเอง มันเจ๋งเนอะ เมื่อก่อนของพวกนี้ใช้เวลาทำหลายอาทิตย์ หมดเงินไปหลายพัน
+                    </p>
+<div class="mt-6 flex justify-center md:justify-start space-x-4">
+<a class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-background-dark" href="#">
+                            My Work
+                        </a>
+<a class="inline-flex items-center justify-center px-5 py-3 border border-border-light dark:border-border-dark text-base font-medium rounded-lg text-foreground-light dark:text-foreground-dark bg-background-light dark:bg-background-dark hover:bg-gray-100 dark:hover:bg-gray-800" href="mailto:hello@alex.design">
+                            Contact Me
+                        </a>
+</div>
+</div>
+</section>
+<section class="mt-16">
+<h2 class="text-3xl font-bold text-center text-foreground-light dark:text-foreground-dark mb-8">What I'm Creating</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-border-light dark:border-border-dark">
+<img alt="Project Image" class="h-48 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVg7nQst0r6bzM0JkXuIf-BfLu02abYjUZD2LFI0oa_UArzRf-igcGHxMrlz-NzedSADx9ah1NHNi9kHam-ixgdbSfCoqnKbg9g5kbiXaDxFmf-cG5gWQEZGbi_XKegWwnSIMZzSmOWTcDbaRlEsxcbYaM05dp2HUjY2wk87H5kwYW7vA7RpaHcXB0Df-DAQ09BPTdn5oljRgnc1jBjIkO3h7xHGeylyhDvRl7g4zb329yuoaVCDuEcE2pmj1bZAvFGqNCSSr194I"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-foreground-light dark:text-foreground-dark">Project One</h3>
+<p class="mt-2 text-subtle-light dark:text-subtle-dark">A brief description of the first project, highlighting the key features and design philosophy.</p>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-border-light dark:border-border-dark">
+<img alt="Project Image" class="h-48 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMcUI9gAveapAt_vfTZXBEX0wNFYBSHW75J27npfdLTepUuItMvqtFbK9y6K3l1DXehuGXkwzQld6WI-wnzEH-gKoHfxON7jnAlxSDMGmJVp9hHXwWLhfKv8mgw8vNmrzSEGfUN96rokgmjC9bieFhZu23_wO6aCuLnx2BSGbnx6axabdG3vWTd2pzeFNdQBBEPoR5oTlRYjWG0Deaq_akjQMAhpoajHR9LJJnhqt5r0cCQbFF3ZRs821AWr6FHL4nRSIREmaVPe4"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-foreground-light dark:text-foreground-dark">Project Two</h3>
+<p class="mt-2 text-subtle-light dark:text-subtle-dark">A brief description of the second project, focusing on its innovative approach and user impact.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-16">
+<h2 class="text-3xl font-bold text-center text-foreground-light dark:text-foreground-dark mb-8">Tools I Use</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8">
+<div class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-border-light dark:border-border-dark aspect-square">
+<svg class="h-10 w-10 sm:h-12 sm:w-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="mt-2 text-sm font-medium text-center text-subtle-light dark:text-subtle-dark">Figma</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-border-light dark:border-border-dark aspect-square">
+<svg class="h-10 w-10 sm:h-12 sm:w-12 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="mt-2 text-sm font-medium text-center text-subtle-light dark:text-subtle-dark">Sketch</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-border-light dark:border-border-dark aspect-square">
+<svg class="h-10 w-10 sm:h-12 sm:w-12 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="mt-2 text-sm font-medium text-center text-subtle-light dark:text-subtle-dark">Adobe XD</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-border-light dark:border-border-dark aspect-square">
+<svg class="h-10 w-10 sm:h-12 sm:w-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="mt-2 text-sm font-medium text-center text-subtle-light dark:text-subtle-dark">Principle</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-border-light dark:border-border-dark aspect-square">
+<svg class="h-10 w-10 sm:h-12 sm:w-12 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="mt-2 text-sm font-medium text-center text-subtle-light dark:text-subtle-dark">Miro</span>
+</div>
+</div>
+</section>
+<section class="mt-16 text-center">
+<div class="flex justify-center space-x-6">
+<a class="text-subtle-light dark:text-subtle-dark hover:text-primary social-link" href="#">
+<svg aria-hidden="true" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.286 3.13 7.9 7.298 8.81v-6.223H7.078V12h2.22V9.825c0-2.18 1.29-3.415 3.3-3.415.957 0 1.944.17 1.944.17v2.219h-1.112c-1.077 0-1.438.64-1.438 1.385V12h2.479l-.4 2.587h-2.079v6.223A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path>
+</svg>
+<span class="sr-only">Facebook</span>
+</a>
+<a class="text-subtle-light dark:text-subtle-dark hover:text-primary social-link" href="#">
+<svg aria-hidden="true" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+<path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+</svg>
+<span class="sr-only">Twitter</span>
+</a>
+<a class="text-subtle-light dark:text-subtle-dark hover:text-primary social-link" href="#">
+<svg aria-hidden="true" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8.23 15.23c-.3.07-.46-.22-.3-.46l.87-1.3c.1-.15.05-.35-.13-.42l-1.3-.53c-.22-.08-.22-.36 0-.45l3.2-1.5c.16-.07.33.04.35.22l.4 3.25c.03.2-.18.38-.37.28l-.53-1.3c-.07-.15-.27-.2-.42-.1l-1.3.85z" fill-rule="evenodd"></path>
+</svg>
+<span class="sr-only">Dribbble</span>
+</a>
+<a class="text-subtle-light dark:text-subtle-dark hover:text-primary social-link" href="#">
+<svg aria-hidden="true" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.206v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.71zM5.337 7.433c-.91 0-1.644-.734-1.644-1.643 0-.91.734-1.644 1.644-1.644.909 0 1.644.734 1.644 1.644 0 .909-.735 1.643-1.644 1.643zM6.615 16.338H4.06v-8.59h2.555v8.59zM18 2H6C3.79 2 2 3.79 2 6v12c0 2.21 1.79 4 4 4h12c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4z" fill-rule="evenodd"></path>
+</svg>
+<span class="sr-only">LinkedIn</span>
+</a>
+</div>
+</section>
+</main>
+</div>
+</body></html>
