@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Stitch Design</title>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1773cf",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111921",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 dark:border-primary/30 px-10 py-4">
+            <div class="flex items-center gap-4 text-black dark:text-white">
+                <a class="flex items-center gap-4 text-black dark:text-white" href="index.html">
+                    <div class="w-8 h-8 text-primary">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_6_319)">
+                                <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_6_319">
+                                    <rect fill="white" height="48" width="48"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-bold">Acme Co</h2>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-black dark:text-white font-medium">
+                <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="hover:text-primary transition-colors" href="about.html">About</a>
+                <a class="text-primary" href="blog.html" aria-current="page">Blog</a>
+                <a class="hover:text-primary transition-colors" href="#">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="relative hidden sm:block">
+                    <input class="pl-10 pr-4 py-2 rounded-full border-0 bg-primary/10 dark:bg-primary/20 focus:ring-2 focus:ring-primary text-black dark:text-white placeholder-black/50 dark:placeholder-white/50" placeholder="Search..." type="text"/>
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 text-black/50 dark:text-white/50">
+                        <svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <button class="md:hidden p-2 rounded-full bg-primary/10 dark:bg-primary/20 text-black dark:text-white">
+                    <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <main class="flex-1 px-4 sm:px-6 lg:px-8 py-10">
+            <div class="max-w-6xl mx-auto">
+                <div class="@container">
+                    <div class="@[480px]:p-4">
+                        <div class="relative flex min-h-[480px] flex-col justify-end items-start gap-6 bg-cover bg-center rounded-xl p-6 sm:p-10" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBP52cRfJzT9ZRhN6JudIYxVuSjwjes7RLP-8g9K1e17uhiw1FlBrnkyYPDckefgtV0-ZTv_5shBHV73fpSTvq1Tdq-U7kQ_4vu-xJTcVplIBS9VsL6gjPIkJarD8rz65l_ish4WfO0iWUUf-QSt4ul9tnL96haaw4sCVv8U2zxtkdcJ0e1vZyXeCpGJCOfoKJzP6B-3ArH3BBQEsVGqDZEzUShYg4Tf3g1EUy1AJuHEb23uVXMkmpRnPDY7E5Lct1m4lApLC1OFyw");'>
+                            <div class="flex flex-col gap-4 text-left">
+                                <h1 class="text-white text-4xl @[480px]:text-6xl font-extrabold tracking-tight">The Future of Work</h1>
+                                <p class="text-white/90 text-base @[480px]:text-lg max-w-2xl">Exploring the latest trends and insights in remote work, productivity, and workplace culture.</p>
+                            </div>
+                            <button class="flex items-center justify-center rounded-full h-12 px-6 bg-primary text-white text-base font-bold tracking-wide hover:opacity-90 transition-opacity">
+                                <span>Read More</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <section class="mt-16">
+                    <h2 class="text-3xl font-bold tracking-tight text-black dark:text-white px-4 pb-6">Recent Posts</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="flex flex-col gap-4 rounded-lg overflow-hidden bg-white/5 dark:bg-black/5 p-4 group">
+                            <div class="w-full bg-center bg-cover aspect-video rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-xfFIVTLMioGd6fEp16UaQd-4ppvmcgZajZMSoBCS_F6K9t_kthwku-Otp0bjwF8xZNMLPakzPqzEVQ_4KnCJE4-p0ZkUhWkom6hd1mgEnegbV2D3vbAwQFG4ePYREWHEschqJ0A0IKMiwltHEtSs1_NxA4NGIVEu-s_uIUc_J_gApzGGzRrqSPrGyINdqmDVftSK4PBjaxZeCO5O5aF33EvKWqWTUQNR34DbFZMZlb96M4NZfFBYse6FBNNs5iusqulBRfTzmbU");'></div>
+                            <div class="flex flex-col gap-3 flex-1">
+                                <h3 class="text-lg font-bold text-black dark:text-white group-hover:text-primary transition-colors">Mastering Time Management: Strategies for Peak Productivity</h3>
+                                <p class="text-black/70 dark:text-white/70 text-sm flex-1">Learn effective techniques to prioritize tasks, eliminate distractions, and maximize your output.</p>
+                                <a class="inline-block text-sm font-bold text-primary hover:underline" href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 rounded-lg overflow-hidden bg-white/5 dark:bg-black/5 p-4 group">
+                            <div class="w-full bg-center bg-cover aspect-video rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGrfIOWzwe9jqZpvMtw4c_UEv-EKv1YXkCr9It5VdkSVEIRz6PlJH61YpM96BjY0cNyGFmfFrORnyRovpl_JUUlZt_e_m6Kqsh_74LpzgrctaJPq5Zop-GuAIkxbsCnXT7h9ojbbjVsPQe-pdJGbkQlkdKNd2XUGqKY0mLO6se3r4U4TiLLUCFHTHtsz8cyDlT37CR7N8hnNE8kTkXrtYdcZjoedwk_2sIHRbw0sd-7Apmoo0bmDNxyb8qw9Sp2y0pH5EkinzgoXs");'></div>
+                            <div class="flex flex-col gap-3 flex-1">
+                                <h3 class="text-lg font-bold text-black dark:text-white group-hover:text-primary transition-colors">Building a Strong Personal Brand Online</h3>
+                                <p class="text-black/70 dark:text-white/70 text-sm flex-1">Discover how to craft a compelling online presence that reflects your skills and values.</p>
+                                <a class="inline-block text-sm font-bold text-primary hover:underline" href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 rounded-lg overflow-hidden bg-white/5 dark:bg-black/5 p-4 group">
+                            <div class="w-full bg-center bg-cover aspect-video rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGuApPCemwO27QpnujdCdcuBLOtZTy5GWuNHPbiWeI9Q_AblZoNSz5rnzW6hZ4ny9fSGGTeBzzQLEMshaxjyiXsh8DCp934xYCRcv8IJaSidLoqCNWySyGSyZAg0hF18IN5qIbU9zQuf9hHl-Hyi_KGvthMpMniN7OO4FdZhwKd2z2yrhtTI8Din7r3eCkkwW5ZMu361d0zbOa5uzDEmc8I9ZwMwjY2FArdWVgQmZ29Di8KpVxosi_83ontZaiSAVbSEMjsSIX9t8");'></div>
+                            <div class="flex flex-col gap-3 flex-1">
+                                <h3 class="text-lg font-bold text-black dark:text-white group-hover:text-primary transition-colors">The Art of Effective Communication in Remote Teams</h3>
+                                <p class="text-black/70 dark:text-white/70 text-sm flex-1">Enhance your communication skills to foster collaboration and understanding in virtual environments.</p>
+                                <a class="inline-block text-sm font-bold text-primary hover:underline" href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 rounded-lg overflow-hidden bg-white/5 dark:bg-black/5 p-4 group">
+                            <div class="w-full bg-center bg-cover aspect-video rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA2lEKpkIiChvwku8jnXB1a4kU9mQfHR6CV0ynWBFsIkUydLOQRBkRpF3NnSTk6FxUCoiB9d9F1TzakHSGKNr3BgQn2YqXrRKRmsBErlsQumTV26rWpf9qPCpjvi6d10UHPCV4XJxZRAL7GcmCT8Pzrxbs7pLAXS--eZ6sc4xPObtEl2gPGMjJrIIeFuMX3Y8IbYJSLKG2VdrQH77trtXyYiLCjTbSvOOUM1TuT_VjBXar5u-4MN1YW0Mmm7sk0HpWiaJuXUIHMdTs");'></div>
+                            <div class="flex flex-col gap-3 flex-1">
+                                <h3 class="text-lg font-bold text-black dark:text-white group-hover:text-primary transition-colors">Finding Work-Life Balance in the Digital Age</h3>
+                                <p class="text-black/70 dark:text-white/70 text-sm flex-1">Explore strategies to integrate work and personal life harmoniously, promoting well-being and reducing burnout.</p>
+                                <a class="inline-block text-sm font-bold text-primary hover:underline" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center p-8 mt-8 gap-2">
+                        <a class="flex size-10 items-center justify-center rounded-full text-black/60 dark:text-white/60 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+                            <svg fill="currentColor" height="18px" viewBox="0 0 256 256" width="18px" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+                            </svg>
+                        </a>
+                        <a class="text-sm font-bold flex size-10 items-center justify-center text-white bg-primary rounded-full" href="#">1</a>
+                        <a class="text-sm font-medium flex size-10 items-center justify-center text-black dark:text-white rounded-full hover:bg-primary/10 dark:hover:bg-primary/20" href="#">2</a>
+                        <a class="text-sm font-medium flex size-10 items-center justify-center text-black dark:text-white rounded-full hover:bg-primary/10 dark:hover:bg-primary/20" href="#">3</a>
+                        <span class="text-sm font-medium flex size-10 items-center justify-center text-black/60 dark:text-white/60">...</span>
+                        <a class="text-sm font-medium flex size-10 items-center justify-center text-black dark:text-white rounded-full hover:bg-primary/10 dark:hover:bg-primary/20" href="#">10</a>
+                        <a class="flex size-10 items-center justify-center rounded-full text-black/60 dark:text-white/60 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+                            <svg fill="currentColor" height="18px" viewBox="0 0 256 256" width="18px" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
